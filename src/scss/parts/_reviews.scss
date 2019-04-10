@@ -1,0 +1,73 @@
+// Reviews
+
+.reviews {
+
+    &__box {
+        .slider-box {
+            padding-top: 30px;
+        }
+    }
+
+    &__description {
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        border-bottom: 2px solid rgba(246, 64, 89, 0.3);
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 14px;
+            bottom: -7px;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid rgba(246, 64, 89, 0.3);
+            border-bottom: 2px solid rgba(246, 64, 89, 0.3);
+            transform: rotate(45deg) skew(10deg, 10deg);
+            background-color: #fff;
+        }
+
+        p {
+            line-height: 1.25;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        img {
+            margin-right: 15px;
+        }
+    }
+
+    &__quote {
+        position: relative;
+        margin: 0;
+        margin-left: 90px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: #666;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            width: 67px;
+            height: 46px;
+            background: url('../img/icon-quote.svg') no-repeat center / contain;
+        }
+
+        p {
+            position: relative;
+            z-index: 10;
+        }
+    }
+}

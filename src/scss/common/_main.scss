@@ -1,0 +1,48 @@
+// Main
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-montserrat;
+    font-size: 16px;
+    color: $color-dark;
+}
+
+img {
+    max-width: 100%;    
+}
+
+.grid {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 150px 0;
+
+    &--small {
+        padding: 60px 0;
+    }
+
+    &--pink {
+        background-color: #F3D4DC;
+    }
+}
+
+.offset-content-left,
+.offset-content-right {
+    position: relative;
+    z-index: 10;
+}
+
+.offset-content-left {
+    margin-left: -100px;
+}
+
+.offset-content-right {
+    margin-right: -200px;
+}

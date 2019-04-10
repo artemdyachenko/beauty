@@ -1,0 +1,21 @@
+// Advantages
+
+.advantages {
+    padding: 100px 0 40px;
+
+    &__box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__item {
+        text-align: center;
+        font-size: 14px;
+
+        span {
+            display: block;
+            padding-top: 15px;
+        }
+    }
+}

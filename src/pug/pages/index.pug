@@ -1,0 +1,137 @@
+
+extends  ../_skeleton
+
+block title
+  title="Главная"
+
+block page
+
+    //- Hero
+    section.hero
+      .grid
+        .js-slider
+          .slider-box(data-thumb="Маникюр")
+            .row
+              .col-sm-6
+                .hero__content
+                  .offset-content-right
+                    h1 Огромная палитра цветов
+                  p Наши мастера побалуют ваши ноготки классическим маникюром или художественной росписью, помогут подобрать рисунок и оптимальную длину для наращивания.
+                  a(href="#").btn Запись онлайн
+
+              .col-sm-6
+                img(src="img/hero-img.png" alt="")
+
+          .slider-box(data-thumb="Педикюр")
+            .row
+              .col-sm-6
+                .hero__content
+                  .offset-content-right
+                    h1 Огромная палитра цветов
+                  p Наши мастера побалуют ваши ноготки классическим маникюром или художественной росписью, помогут подобрать рисунок и оптимальную длину для наращивания.
+                  a(href="#").btn Запись онлайн
+
+              .col-sm-6
+                img(src="img/hero-img.png" alt="")
+
+          .slider-box(data-thumb="Мастера")
+            .row
+              .col-sm-6
+                .hero__content
+                  .offset-content-right
+                    h1 Огромная палитра цветов
+                  p Наши мастера побалуют ваши ноготки классическим маникюром или художественной росписью, помогут подобрать рисунок и оптимальную длину для наращивания.
+                  a(href="#").btn Запись онлайн
+
+              .col-sm-6
+                img(src="img/hero-img.png" alt="")
+
+          .slider-box(data-thumb="Покрытие гель-лак")
+            .row
+              .col-sm-6
+                .hero__content
+                  .offset-content-right
+                    h1 Огромная палитра цветов
+                  p Наши мастера побалуют ваши ноготки классическим маникюром или художественной росписью, помогут подобрать рисунок и оптимальную длину для наращивания.
+                  a(href="#").btn Запись онлайн
+
+              .col-sm-6
+                img(src="img/hero-img.png" alt="")
+
+        .slider-controll.js-slider-controll
+
+    //- Advantages
+    include ../parts/_advantages
+
+    section.content-section
+      .grid
+        .row.middle-sm
+          .col-sm-6
+            .offset-content-right
+              h2.h1 Студия маникюра beBeauty
+                span.title-additional Побалуйте свои ногти качественным уходом! 
+
+              p Как же хочется иметь ухоженные ноготки, любоваться аккуратным маникюром и педикюром, восхищаться качеством работы и приемлемой ценой! Но как сложно найти профессионального мастера, который работает с хорошими материалами и окружит ваши пальчики требуемой заботой! В нашей студии маникюра BeBeauty это отлично понимают.
+
+              p Поэтому мы создали уютное место в самом сердце Чернигова для всех представительниц прекрасного пола. Наши мастера побалуют ваши ноготки классическим маникюром или художественной росписью, помогут подобрать рисунок и оптимальную длину для наращивания.
+
+              a(href="#").btn.btn--transparent Подробнее
+
+          .col-sm-6
+            img(src="img/home-img-01.png" alt="")
+
+    section.content-section.content-section--small.content-section--pink
+      .grid
+        .js-slider
+          .slider-box(data-thumb="Классический маникюр")
+            .row.middle-sm
+              .col-sm-7
+                img(src="img/home-img-02.png" alt="")
+
+              .col-sm-5
+                .offset-content-left
+                  h2 Классический маникюр
+                  p Классический маникюр — популярный метод ухода за ногтями. Его часто называют «мокрым», обрезным, и он лежит в основе остальных видов маникюра, выполнения нейл-дизайна или покрытия.
+                  .btn-box
+                    a(href="#").btn.btn--purple Подробнее
+                    span.btn-price от 150 грн.
+
+          .slider-box(data-thumb="Аппаратный маникюр")
+            .row.middle-sm
+              .col-sm-7
+                img(src="img/home-img-02.png" alt="")
+
+              .col-sm-5
+                .offset-content-left
+                  h2 Классический маникюр
+                  p Классический маникюр — популярный метод ухода за ногтями. Его часто называют «мокрым», обрезным, и он лежит в основе остальных видов маникюра, выполнения нейл-дизайна или покрытия.
+                  .btn-box
+                    a(href="#").btn.btn--purple Подробнее
+                    span.btn-price от 150 грн.
+
+          .slider-box(data-thumb="Мастера")
+            .row.middle-sm
+              .col-sm-7
+                img(src="img/home-img-02.png" alt="")
+
+              .col-sm-5
+                .offset-content-left
+                  h2 Классический маникюр
+                  p Классический маникюр — популярный метод ухода за ногтями. Его часто называют «мокрым», обрезным, и он лежит в основе остальных видов маникюра, выполнения нейл-дизайна или покрытия.
+                  .btn-box
+                    a(href="#").btn.btn--purple Подробнее
+                    span.btn-price от 150 грн.
+
+        .slider-controll.slider-controll--white.slider-controll--offset.js-slider-controll
+
+    //- Portfolio
+    include ../parts/_portfolio
+
+    //- Reviews
+    include ../parts/_reviews
+
+    //- Map
+    include ../parts/_map
+
+    //- Footer text
+    include ../parts/_footer-text

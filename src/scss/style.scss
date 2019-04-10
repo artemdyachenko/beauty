@@ -1,0 +1,26 @@
+// Extended Files
+
+// Libs
+@import 'libs/flexboxgrid';
+@import 'libs/slick';
+
+// Common
+@import 'common/variables';
+@import 'common/normalize';
+@import 'common/typography';
+@import 'common/main';
+
+// Elements
+@import 'elements/buttons';
+@import 'elements/icons';
+@import 'elements/slider';
+
+// Parts
+@import 'parts/header';
+@import 'parts/hero';
+@import 'parts/advantages';
+@import 'parts/portfolio';
+@import 'parts/reviews';
+@import 'parts/map';
+@import 'parts/footer-text';
+@import 'parts/footer.scss';

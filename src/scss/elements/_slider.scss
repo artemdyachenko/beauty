@@ -1,0 +1,45 @@
+// Slider
+
+.slider-controll {
+    display: flex;
+    color: #ccc;
+
+    &--white {
+        color: #fff;
+    }
+
+    &--offset {
+        padding-top: 60px;
+    }
+
+    .slick-arrow {
+        font-size: 10px;
+        line-height: 1.6;
+        cursor: pointer;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 10px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .slick-active {
+            color: #333;
+        }
+    }
+
+    .icon-arrow-right {
+        order: 3;
+    }
+}

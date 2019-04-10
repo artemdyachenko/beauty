@@ -1,0 +1,23 @@
+// Footer
+
+.footer {
+  
+}
+
+.footer-copyright {
+    padding: 15px 0;
+    border-top: 1px solid #F5F5F5;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: #999;
+    }
+
+    a {
+        color: #999;
+    }
+}

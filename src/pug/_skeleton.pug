@@ -1,0 +1,33 @@
+//- include _mixins
+
+- var fonts= "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic";
+
+doctype html
+
+html(lang="en")
+
+  head
+    // Site Title
+    block title
+
+    // Meta
+    meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(charset="utf-8")
+
+    // Styles
+    link(rel="stylesheet" href=fonts)
+    link(rel="stylesheet" href="css/style.min.css")
+
+  body
+
+    // header
+    include parts/_header
+
+    block page
+
+    // footer
+    include parts/_footer
+
+    // Javascript
+    script(src="js/script.js")
