@@ -2,6 +2,16 @@
 
 .header {
   margin-bottom: 30px;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  @include mq(desktop, min) {
+    position: relative;
+  }
 
   .nav {
       display: none;
@@ -108,7 +118,7 @@
     display: none;
     position: fixed;
     left: 0;
-    top: 80px;
+    top: 78px;
     bottom: 0;
     right: 0;
     z-index: 100;

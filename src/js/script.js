@@ -49,10 +49,13 @@ $(document).ready(function() {
         $('#' + currentPopup).addClass('is-active');
     });
 
+
+     // Popup close
     $('.js-popup-close').click(function() {
         $('body').removeClass('popup-is-open');
         $('.popup__box').removeClass('is-active');
     });
+
 
     // Toggle phone box
     $('.js-phone').click(function() {
