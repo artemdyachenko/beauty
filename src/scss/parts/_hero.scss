@@ -1,9 +1,18 @@
 // Hero
 
 .hero {
- 
+
     &__content {
-        padding-top: 80px;
+
+        @include mq(tablet, min) {
+            position: relative;
+            padding-top: 40px;
+        }
+
+        @include mq(desktop, min) {
+            position: relative;
+            padding-top: 80px;
+        }
     }
     
     img {

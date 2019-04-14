@@ -1,0 +1,16 @@
+// Helpers
+
+.hidden-mobile {
+    display: none;
+
+    @include mq(tablet, min) {
+        display: block;
+    }
+}
+
+.hidden-tablet {
+
+    @include mq(tablet, min) {
+        display: none;
+    }
+}

@@ -2,7 +2,16 @@
 
 .slider-controll {
     display: flex;
+    align-items: center;
     color: #ccc;
+
+    .hero & {
+        padding-top: 60px;
+
+        @include mq(tablet, min)  {
+            padding-top: 0;
+        }
+    }
 
     &--white {
         color: #fff;
@@ -10,6 +19,10 @@
 
     &--offset {
         padding-top: 60px;
+    }
+
+    &--center {
+        justify-content: center;
     }
 
     .slick-arrow {
@@ -24,18 +37,32 @@
 
     .slick-dots {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 10px;
         list-style: none;
 
         li {
-            margin: 0 10px;
+            margin: 3px 10px 3px;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
             cursor: pointer;
         }
 
+        .slider-dot {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #E5E5E5;
+        }
+
         .slick-active {
             color: #333;
+         
+            .slider-dot {
+                background-color: #F391B1;
+            }
         }
     }
 

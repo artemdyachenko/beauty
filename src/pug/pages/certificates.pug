@@ -1,0 +1,29 @@
+
+extends  ../_skeleton
+
+block title
+  title="Сертификаты"
+
+block page
+
+    //- Hero
+    section.content-section--small.content-section--pt-0.hero
+      .grid
+        ul.breadcrumbs
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Главная
+            li.breadcrumbs__item Сертификаты
+        .hero__content
+            h1 Пересядь с ненужных подарков на сертификаты!
+
+    //- Sertificates
+    include ../parts/_certificates
+
+    //- Reviews
+    include ../parts/_reviews
+
+    //- Map
+    include ../parts/_map
+
+    //- Footer text
+    include ../parts/_footer-text

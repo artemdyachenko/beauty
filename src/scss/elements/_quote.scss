@@ -1,0 +1,13 @@
+// Quote
+
+.quote {
+
+    &__text {
+        margin-bottom: 0;
+        text-align: center;
+
+        @include mq(tablet-wide, min) {
+            font-size: 46px;
+        }
+    }
+}

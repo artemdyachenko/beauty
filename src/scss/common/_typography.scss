@@ -11,35 +11,110 @@ h2,
 
 h1,
 .h1 {
-    margin-bottom: 30px;
-    font-size: 64px;
+    margin-bottom: 20px;
+    font-size: 36px;
+
+    @include mq(tablet-wide, min) {
+        margin-bottom: 30px;
+        font-size: 64px;
+    }
 }
 
 h2,
 .h2 {
-    margin-bottom: 30px;
-    font-size: 48px;
+    margin-bottom: 20px;
+    font-size: 24px;
+
+    @include mq(tablet-wide, min) {
+        margin-bottom: 30px;
+        font-size: 48px;
+    }
+}
+
+h3,
+.h3 {
+    margin-bottom: 20px;
+    font-size: 20px; 
+
+    @include mq(tablet-wide, min) {
+        font-size: 36px;
+    }
 }
 
 .title-additional {
-    display: inline-block;
-    margin-left: 55px;
-    max-width: 300px;
+    display: block;
+    padding-top: 20px;
     font-size: 20px;
     letter-spacing: 0.3px;
     color: #E1B0C4;
+
+    @include mq(desktop, min) {
+        display: inline-block;
+        margin-left: 55px;
+        max-width: 300px;
+    }
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 1.4;
 
-    &:last-child {
-        margin-bottom: 0;
+    @include mq(tablet-wide, min) {
+        margin-bottom: 30px;
     }
 }
 
-.text-center {
-    text-align: center;
+.text {
+
+    &--center {
+        text-align: center;
+    }
+
+    &--large {
+        font-size: 18px;
+        font-weight: 500;
+
+        @include mq(tablet-wide, min) {
+            font-size: 24px;
+        }
+    }
+
+    &--pink {
+        color: #E1B0C4;
+    }
+}
+
+.text-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    @include mq(tablet-wide, min) {
+        margin-bottom: 30px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+.text-table {
+    width: 100%;
+
+    th {
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding-bottom: 10px;
+    }
+
+    &__offset {
+
+        td,
+        th {
+            padding-bottom: 30px;
+        }
+    }
 }

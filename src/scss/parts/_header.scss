@@ -2,27 +2,60 @@
 
 .header {
   margin-bottom: 30px;
+
+  .nav {
+      display: none;
+
+      @include mq(desktop, min) {
+          display: flex;
+      }
+  }
+
+  .call__btn {
+      display: none;
+
+      @include mq(desktop, min) {
+        display: flex;
+    }
+  }
 }
 
 .header-top {
+    display: none;
     padding: 15px 0;
     font-size: 12px;
     border-bottom: 1px solid #F5F5F5;
     color: #999;
 
     &__box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+        @include mq(tablet-wide, min) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
 .header-info {
-    display: flex;
+    
+    @include mq(tablet-wide, min) {
+        display: flex;
+    }
 
     &__item {
         display: flex;
         letter-spacing: 0.3px;
+        font-size: 12px;
+        margin-bottom: 15px;
+
+        @include mq(tablet-wide, min) {
+            margin-bottom: 0;
+        }
+
+        @include mq(tablet-wide, min) {
+            font-size: 14px;
+        }
 
         [class^="icon-"] {
             margin-right: 10px;
@@ -30,7 +63,10 @@
         }
 
         &:not(:last-child) {
-            margin-right: 30px;
+
+            @include mq(tablet-wide, min) {
+                margin-right: 30px;
+            }
         }
     }
 }
@@ -65,51 +101,29 @@
     &__box {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+
+        @include mq(tablet, min) {
+
+        }
     }
 }
 
-.header-nav {
-    margin-left: 70px;
+.header-mobile {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
 
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    .nav-mobile-is-open & {
+        display: block;
+    }
+
+    .nav {
         display: flex;
-    }
-
-    &__item {
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
-    &__link {
-        font-size: 14px;
-        font-weight: 500;
-        text-decoration: none;
-        color: $color-dark;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-.header-call {
-    margin-left: auto;
-
-    &__phone {
-        display: inline-block;
-        margin-right: 50px;
-        font-size: 14px;
-        font-weight: 700;
-        text-decoration: none;
-        color: $color-dark;
-
-        [class^="icon-"] {
-            margin: 0 10px;
-        }
     }
 }

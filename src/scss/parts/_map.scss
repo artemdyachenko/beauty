@@ -1,7 +1,11 @@
 // Map
 
 .map {
-    height: 400px;
+    height: 260px;
     width: 100%;
     background-color: #ccc;
+
+    @include mq(tablet, min) {
+        height: 400px;
+    }
 }

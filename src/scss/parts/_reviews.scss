@@ -12,8 +12,6 @@
         position: relative;
         padding-bottom: 30px;
         margin-bottom: 15px;
-        font-size: 24px;
-        font-weight: 500;
         border-bottom: 2px solid rgba(246, 64, 89, 0.3);
 
         &:after {
@@ -37,9 +35,14 @@
     &__author {
         display: flex;
         align-items: center;
+        margin-bottom: 60px;
         font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
+
+        @include mq(tablet, min) {
+            margin-bottom: 0;
+        }
 
         img {
             margin-right: 15px;
@@ -49,20 +52,29 @@
     &__quote {
         position: relative;
         margin: 0;
-        margin-left: 90px;
+        padding-left: 15px;
         padding-top: 10px;
         font-size: 14px;
         color: #666;
+
+        @include mq(desktop, min) {
+            margin-left: 90px;
+            padding-left: 0;
+        }
 
         &:before {
             content: '';
             display: block;
             position: absolute;
-            left: -15px;
+            left: 0;
             top: -15px;
             width: 67px;
             height: 46px;
             background: url('../img/icon-quote.svg') no-repeat center / contain;
+
+            @include mq(tablet, min) {
+                left: -15px;
+            }
         }
 
         p {

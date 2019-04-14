@@ -1,0 +1,65 @@
+
+extends  ../_skeleton
+
+block title
+  title="Услуги"
+
+block page
+
+    //- Hero
+    section.hero
+      .grid
+        .row
+          .col-xs-12.col-sm-6
+            .hero__content
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a(href="#").breadcrumbs__link Главная
+                li.breadcrumbs__item Услуги
+              .offset-content-right
+                h1 Райское наслаждение для ваших пальчиков
+              p Ухоженные руки, стильный маникюр и аккуратный педикюр в тон — признак ухоженной современной женщины. Мы готовы подарить вам безопасность и комфорт, порадовать профессионализмом и качеством продукции.
+
+          .col-xs-12.col-sm-6
+            img(src="img/services-hero-img.png" alt="")
+
+    section.content-section.content-section--pb-0
+      .grid
+        .row.middle-sm
+          .col-xs-12.col-sm-6
+            p.text--large Если вам нужны мастера, которые профессионально могут привести ваши ручки и ножки в порядок — мы ждем вас в студии маникюра BeBeauty.
+            p.text--pink 
+              b Наш nail-салон оказывает такие услуги:
+            ul.text-list
+              li Маникюр: обрезной, аппаратный
+              li Педикюр: классический, аппаратный, комбинированный, кислотный.
+              li Парафинотерапия для рук и ног
+              li Наращивание ногтей, покрытие гель-лаком, ногтевой дизайн, стемпинг.
+
+          .col-xs-12.col-sm-5.col-sm-offset-1
+            .advantages-item.advantages-item--horizontal
+              .advantages-item__img
+                img(src="img/advantages-icon-06.svg" alt="")
+              span Большое внимание в нашем салоне отводится безопасности и заботе о здоровье посетителей. Поэтому не экономим на расходных материалах. 
+
+            .advantages-item.advantages-item--horizontal
+              .advantages-item__img
+                img(src="img/advantages-icon-07.svg" alt="")
+              span Полотенца, распорки и тапочки мы используем одноразовые. Все инструменты проходят двойную стерилизацию, а на ванночки надеваются одноразовые чехлы.
+
+    //- Quote text
+    section.content-section--small
+      .grid
+        h2.quote__text.text--pink BeBeauty — безопасное качество по приемлемым ценам!
+
+    //- Services
+    include ../parts/_services
+
+    //- Reviews
+    include ../parts/_reviews
+
+    //- Map
+    include ../parts/_map
+
+    //- Footer text
+    include ../parts/_footer-text

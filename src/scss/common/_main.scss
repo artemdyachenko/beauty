@@ -8,8 +8,16 @@
 
 body {
     font-family: $font-montserrat;
-    font-size: 16px;
+    font-size: 14px;
     color: $color-dark;
+
+    &.nav-mobile-is-open {
+        overflow: hidden;
+    }
+
+    @include mq(tablet-wide, min) {
+        font-size: 16px;
+    }
 }
 
 img {
@@ -17,32 +25,71 @@ img {
 }
 
 .grid {
-    width: 1140px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .content-section {
-    padding: 150px 0;
+    padding: 90px 0;
+
+    @include mq(tablet, min) {
+        padding: 120px 0;
+    }
+
+    @include mq(desktop, min) {
+        padding: 150px 0;
+    }
 
     &--small {
+        padding: 45px 0;
+
+        @include mq(desktop, min) {
+            padding: 60px 0; 
+        }
+    }
+
+    &--middle {
         padding: 60px 0;
+
+        @include mq(desktop, min) {
+            padding: 80px 0;
+        }
     }
 
     &--pink {
         background-color: #F3D4DC;
     }
+
+    &--pb-0 {
+        padding-bottom: 0;
+    }
+
+    &--pt-0 {
+        padding-top: 0;
+    }
 }
 
 .offset-content-left,
 .offset-content-right {
-    position: relative;
-    z-index: 10;
+
+    @include mq(tablet-wide, min) {
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .offset-content-left {
-    margin-left: -100px;
+
+    @include mq(tablet-wide, min) {
+        margin-left: -100px;
+    }
 }
 
 .offset-content-right {
-    margin-right: -200px;
+
+    @include mq(tablet-wide, min) {
+        margin-right: -200px;
+    }
 }

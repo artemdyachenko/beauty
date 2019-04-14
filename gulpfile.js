@@ -57,6 +57,7 @@ gulp.task('js', function(){
     return gulp.src([
         'src/js/jquery.js',
         'src/js/slick.js',
+        'src/js/magnific-popup.js',
         'src/js/script.js'
     ])
     .pipe(concat('script.js'))

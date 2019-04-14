@@ -1,0 +1,42 @@
+// Breadcrumbs
+
+.breadcrumbs {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    .hero__content & {
+        
+
+        @include mq(tablet, min) {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__item {
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 900;
+        color: #000;
+
+        &:not(:last-child):after {
+            content: '·';
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        color: #999;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

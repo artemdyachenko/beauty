@@ -3,17 +3,28 @@
 // Libs
 @import 'libs/flexboxgrid';
 @import 'libs/slick';
+@import 'libs/magnific';
 
 // Common
 @import 'common/variables';
+@import 'common/mixins';
 @import 'common/normalize';
 @import 'common/typography';
+@import 'common/helpers';
 @import 'common/main';
 
 // Elements
+@import 'elements/nav';
 @import 'elements/buttons';
 @import 'elements/icons';
 @import 'elements/slider';
+@import 'elements/quote';
+@import 'elements/breadcrumbs';
+@import 'elements/blog';
+@import 'elements/article';
+@import 'elements/banner';
+@import 'elements/step';
+@import 'elements/call';
 
 // Parts
 @import 'parts/header';
@@ -22,5 +33,6 @@
 @import 'parts/portfolio';
 @import 'parts/reviews';
 @import 'parts/map';
-@import 'parts/footer-text';
+@import 'parts/certificates';
+@import 'parts/services';
 @import 'parts/footer.scss';

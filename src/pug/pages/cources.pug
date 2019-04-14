@@ -1,0 +1,62 @@
+
+extends  ../_skeleton
+
+block title
+  title="Курсы"
+
+block page
+
+    //- Hero
+    section.content-section--small.content-section--pt-0.hero
+        .grid
+            .row
+                .col-xs-12.col-md-10
+                    ul.breadcrumbs
+                        li.breadcrumbs__item
+                            a(href="#").breadcrumbs__link Главная
+                        li.breadcrumbs__item Курсы
+                    .hero__content
+                        .offset-content-right
+                            h1 Курсы маникюра в Чернигове
+                        p Нежностью смотрели друг хомячок ходит с точками на лбу выбивались. К автобусу бежала одевающаяся. Карло вырубил буратино ней аккуратно бреющийся мужчина борис не слышала.
+
+    .banner-image(style="background-image: url('img/banner-img.jpg')")
+
+    section.content-section--small
+        .grid
+            h2 Для кого подойдут наши курсы?
+            .row
+                .col-xs-12.col-sm-4
+                    .step-item
+                        .step-item__number 1
+                        p Стоял под лестницей длинными зимними холодными вечерами она вешала на кота
+
+                .col-xs-12.col-sm-4
+                    .step-item
+                        .step-item__number 2
+                        p Потенцию и излили ее на диване а на диване кактус упал
+
+                .col-xs-12.col-sm-4
+                    .step-item
+                        .step-item__number 3
+                        p Декабристы накопили большую потенцию и молчалина произошел под дождём
+
+    //- Quote text
+    section.content-section--small
+      .grid
+        h2.quote__text.text--pink Выбери свой курс
+
+    //- Services
+    include ../parts/_services
+
+    //- Portfolio
+    include ../parts/_portfolio
+
+    //- Reviews
+    include ../parts/_reviews
+
+    //- Map
+    include ../parts/_map
+
+    //- Footer text
+    include ../parts/_footer-text

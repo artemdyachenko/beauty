@@ -1,0 +1,20 @@
+// Sertificates
+
+.certificates {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.25%, #FFFFFF 100%), #F3D4DC;
+
+    img {
+        margin-bottom: 30px;
+
+        @include mq(tablet, min) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__description {
+        padding-top: 60px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,37 @@
+// Call
+
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq(tablet, min) {
+        margin-left: auto;
+    }
+
+    &__phone {
+        display: inline-block;
+      
+
+        @include mq(tablet, min) {
+            margin-right: 50px;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $color-dark;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__arrow {
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+    }
+}

@@ -11,3 +11,11 @@ $path-font: '../fonts';
 $color-white: #fff;
 $color-black: #000;
 $color-dark: #333;
+
+// Breakpoints
+$breakpoints: (
+  "phone":        320px,
+  "tablet":       768px,
+  "tablet-wide":  992px,
+  "desktop":      1200px
+);
