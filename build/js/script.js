@@ -4912,4 +4912,25 @@ $(document).ready(function() {
         $('body').toggleClass('nav-mobile-is-open');
     });
 
+
+    // Popup open
+    $('.js-popup-open').click(function(e) {
+        e.preventDefault();
+
+        var currentPopup = $(this).data('popup');
+
+        $('body').addClass('popup-is-open');
+        $('#' + currentPopup).addClass('is-active');
+    });
+
+    $('.js-popup-close').click(function() {
+        $('body').removeClass('popup-is-open');
+        $('.popup__box').removeClass('is-active');
+    });
+
+    // Toggle phone box
+    $('.js-phone').click(function() {
+        $(this).parent('.call__phone').toggleClass('is-active');
+    });
+
 });

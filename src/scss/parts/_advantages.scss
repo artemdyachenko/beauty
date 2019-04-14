@@ -23,6 +23,7 @@
 
     @include mq(tablet-wide, min) {
         flex-basis: 20%;
+        margin-bottom: 0;
     }
 
     &__img {

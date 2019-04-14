@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <!-- header-->
+    <!-- Header-->
     <!-- header-->
     <header class="header">
       <div class="header-top">
@@ -43,10 +43,11 @@
               </ul>
             </nav>
             <div class="call">
-              <div class="call__phone"><a class="call__link" href="#"><span class="call__icon icon-kievstar"></span>068 810 22 29</a>
-                <button class="call__arrow"><span class="icon-arrow-down"></span></button>
+              <div class="call__phone"><a class="call__link" href="tel:+380688102229"><span class="call__icon icon-kievstar"></span>068 810 22 29</a>
+                <button class="call__arrow js-phone"><span class="icon-arrow-down"></span></button>
+                <div class="call__box"><a class="call__link" href="tel:+380730562229"><span class="call__icon icon-life"></span>073 056 22 29</a><a class="call__link" href="tel:+380990342229"><span class="call__icon icon-vodofone"></span>099 034 22 29</a></div>
               </div>
-              <button class="call__btn btn">Запись онлайн</button>
+              <button class="call__btn btn js-popup-open" data-popup="sign-in">Запись онлайн</button>
             </div>
             <button class="nav-btn js-nav-btn"><span></span></button>
             <div class="header-mobile">
@@ -62,7 +63,7 @@
                   </ul>
                 </nav>
                 <div class="call">
-                  <button class="call__btn btn">Запись онлайн</button>
+                  <button class="call__btn btn js-popup-open" data-popup="sign-in">Запись онлайн</button>
                 </div>
                 <div class="header-top__box">
                   <div class="header-info"><span class="header-info__item"> <span class="icon-address"></span>г. Чернигов, проспект Победы, 139; 3 этаж, офис 307</span><span class="header-info__item"> <span class="icon-time"></span>Без выходных с 9:00 до 21:00</span></div>
@@ -291,7 +292,7 @@
         <h2 class="quote__text">beBeauty — лучший маникюр в Чернигове!</h2>
       </div>
     </section>
-    <!-- footer-->
+    <!-- Footer-->
     <!-- footer-->
     <footer class="footer">
       <div class="footer-main">
@@ -308,10 +309,11 @@
               </ul>
             </nav>
             <div class="call">
-              <div class="call__phone"><a class="call__link" href="#"><span class="call__icon icon-kievstar"></span>068 810 22 29</a>
-                <button class="call__arrow"><span class="icon-arrow-down"></span></button>
+              <div class="call__phone"><a class="call__link" href="tel:+380688102229"><span class="call__icon icon-kievstar"></span>068 810 22 29</a>
+                <button class="call__arrow js-phone"><span class="icon-arrow-down"></span></button>
+                <div class="call__box"><a class="call__link" href="tel:+380730562229"><span class="call__icon icon-life"></span>073 056 22 29</a><a class="call__link" href="tel:+380990342229"><span class="call__icon icon-vodofone"></span>099 034 22 29</a></div>
               </div>
-              <button class="call__btn btn">Запись онлайн</button>
+              <button class="call__btn btn js-popup-open" data-popup="sign-in">Запись онлайн</button>
             </div>
           </div>
         </div>
@@ -323,6 +325,27 @@
         </div>
       </div>
     </footer>
+    <!-- Popup-->
+    <div class="popup">
+      <div class="popup__box" id="sign-in">
+        <button class="popup__close js-popup-close"></button>
+        <h3>Запись онлайн</h3>
+        <form class="form" action="">
+          <div class="form__item">
+            <input type="text" placeholder="Ваше Имя">
+          </div>
+          <div class="form__item">
+            <input type="text" placeholder="Номер телефона">
+          </div>
+          <div class="form__item"> 
+            <input type="text" placeholder="Желаемое время">
+          </div>
+          <div class="form__item"> 
+            <input class="btn btn--purple" type="submit" value="Записаться">
+          </div>
+        </form>
+      </div>
+    </div>
     <!-- Javascript-->
     <script src="js/script.js"></script>
   </body>

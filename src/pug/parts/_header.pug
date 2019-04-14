@@ -43,12 +43,19 @@ header.header
 
                 .call
                     .call__phone
-                        a(href="#").call__link
+                        a(href="tel:+380688102229").call__link
                             span.call__icon.icon-kievstar
                             | 068 810 22 29
-                        button.call__arrow
+                        button.call__arrow.js-phone
                             span.icon-arrow-down
-                    button.call__btn.btn Запись онлайн
+                        .call__box
+                            a(href="tel:+380730562229").call__link
+                                span.call__icon.icon-life
+                                | 073 056 22 29
+                            a(href="tel:+380990342229").call__link
+                                span.call__icon.icon-vodofone
+                                | 099 034 22 29
+                    button(data-popup="sign-in").call__btn.btn.js-popup-open Запись онлайн
 
                 button.nav-btn.js-nav-btn
                     span
@@ -71,7 +78,7 @@ header.header
                                     a(href="#").nav__link Контакты
 
                         .call
-                            button.call__btn.btn Запись онлайн
+                            button(data-popup="sign-in").call__btn.btn.js-popup-open Запись онлайн
 
                         .header-top__box
                             .header-info

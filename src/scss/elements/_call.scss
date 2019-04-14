@@ -10,11 +10,38 @@
     }
 
     &__phone {
+        position: relative;
         display: inline-block;
       
-
         @include mq(tablet, min) {
             margin-right: 50px;
+        }
+    }
+
+    &__box {
+        opacity: 0;
+        z-index: -10;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: .3s;
+        transform: translate(0, -20px);
+
+        .is-active & {
+            opacity: 1;
+            z-index: 200;
+            transform: translate(0, 0);
+        }
+
+        .call__link {
+            display: block;
+            width: 100%;
+            background-color: #fff;
+            padding-bottom: 10px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
         }
     }
 
@@ -30,6 +57,7 @@
     }
 
     &__arrow {
+        outline: none;
         border: none;
         background-color: transparent;
         padding: 10px;

@@ -38,13 +38,11 @@
 }
 
 .header-info {
-    
-    @include mq(tablet-wide, min) {
-        display: flex;
-    }
+    display: flex;
 
     &__item {
         display: flex;
+        width: 50%;
         letter-spacing: 0.3px;
         font-size: 12px;
         margin-bottom: 15px;
@@ -54,6 +52,7 @@
         }
 
         @include mq(tablet-wide, min) {
+            width: 100%;
             font-size: 14px;
         }
 
@@ -102,10 +101,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        @include mq(tablet, min) {
-
-        }
     }
 }
 
@@ -125,5 +120,10 @@
 
     .nav {
         display: flex;
+    }
+
+    .call__btn {
+        margin-bottom: 30px;
+        display: block;
     }
 }
