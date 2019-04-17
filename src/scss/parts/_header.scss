@@ -24,7 +24,7 @@
   .call__btn {
       display: none;
 
-      @include mq(desktop, min) {
+      @include mq(tablet, min) {
         display: flex;
     }
   }

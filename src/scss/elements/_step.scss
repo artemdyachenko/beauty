@@ -1,11 +1,6 @@
 // Step
 
 .step-item {
-    padding-top: 10px;
-
-    @include mq(tablet, min) {
-        padding-top: 30px;
-    }
 
     &__number {
         font-size: 64px;

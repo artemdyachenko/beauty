@@ -1,10 +1,10 @@
 // Advantages
 
 .advantages {
-    padding-top: 100px;
+    padding-top: 40px;
 
-    @include mq(tablet, min) {
-        padding-bottom: 40px;
+    @include mq(desktop, min) {
+        padding-top: 80px;
     }
 
     &__box {
@@ -21,7 +21,7 @@
     text-align: center;
     font-size: 14px;
 
-    @include mq(tablet-wide, min) {
+    @include mq(tablet, min) {
         flex-basis: 20%;
         margin-bottom: 0;
     }

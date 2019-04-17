@@ -7,9 +7,12 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
 
+    + .hero__content {
+        padding-top: 10px;
+    }
+
     .hero__content & {
         
-
         @include mq(tablet, min) {
             position: absolute;
             left: 0;

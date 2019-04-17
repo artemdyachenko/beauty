@@ -3,22 +3,20 @@
 .slider-controll {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 30px;
     color: #ccc;
 
     .hero & {
-        padding-top: 60px;
 
-        @include mq(tablet, min)  {
-            padding-top: 0;
+        @include mq(desktop, min) {
+            margin-top: 0;
+            justify-content: flex-start;
         }
     }
 
     &--white {
         color: #fff;
-    }
-
-    &--offset {
-        padding-top: 60px;
     }
 
     &--center {

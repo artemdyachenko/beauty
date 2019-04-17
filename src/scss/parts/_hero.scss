@@ -4,6 +4,11 @@
 
     &__content {
 
+        > h1:last-child,
+        > p:last-child {
+            margin-bottom: 0;
+        }
+
         @include mq(tablet, min) {
             position: relative;
             padding-top: 40px;
@@ -12,6 +17,14 @@
         @include mq(desktop, min) {
             position: relative;
             padding-top: 80px;
+        }
+    }
+
+    &__img {
+        padding-top: 40px;
+
+        @include mq(tablet, min) {
+            padding-top: 0;
         }
     }
     

@@ -3,13 +3,13 @@
 .blog-item {
     text-decoration: none;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 18px;
     font-weight: 700;
     color: #333;
 
     @include mq(tablet, min) {
-        margin-bottom: 90px;
+        margin-bottom: 60px;
     }
 
     &:hover {

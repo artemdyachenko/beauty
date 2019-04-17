@@ -5,4 +5,19 @@
     img {
         margin-bottom: 30px;
     }
+
+    i {
+        color: #E1B0C4;
+        font-style: normal;
+    }
+
+    h5,
+    p,
+     {
+        margin-bottom: 20px;
+
+        @include mq(tablet-wide, min) {
+            margin-bottom: 30px;
+        }
+    }
 }
