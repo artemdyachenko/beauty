@@ -1,0 +1,74 @@
+// Landing
+
+.landing-img-1 {
+
+    @include mq(desktop, min) {
+        margin-bottom: -50px;
+    }
+}
+
+.landing-img-2 {
+
+    @include mq(desktop, min) {
+        margin-top: -130px;
+    }
+}
+
+.landing-img-3 {
+
+    @include mq(tablet, min) {
+        display: none;
+    }
+    
+    @include mq(desktop, min) {
+        display: block;
+        margin-bottom: -240px;
+        margin-top: 30px;
+    }
+}
+
+.landing-form {
+
+    input {
+        margin-bottom: 20px;
+    }
+}
+
+.header-landing {
+
+    .call__phone {
+        
+        @include mq(desktop, min) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .call__arrow {
+
+        @include mq(desktop, min) {
+            display: none;
+        }
+    }
+
+    .call__box {
+
+        @include mq(desktop, min) {
+            position: relative;
+            opacity: 1;
+            z-index: 0;
+            transform: translate(0,0);
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .call__link {
+
+        @include mq(desktop, min) {
+            padding-bottom: 0;
+            white-space: nowrap;
+            margin-right: 20px;
+        }
+    }
+}

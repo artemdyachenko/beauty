@@ -1,0 +1,229 @@
+
+extends  ../_skeleton-landing
+
+block title
+  title="Лендинг"
+
+block page
+
+    //- Hero
+    section.hero
+      .grid
+        .row
+            .col-xs-12.col-sm-6
+                .hero__content
+                    .offset-content-right
+                        h1 Идеальный маникюр в Чернигове
+                        p от ведущих мастеров студии маникюра beBeauty
+
+            .col-xs-12.col-sm-6.first-xs.last-sm
+                img(src="img/landing-hero-img.jpg" alt="").landing-img-1
+
+    section.content-section.content-section--pink
+      .grid
+        .row
+          .col-xs-12.col-sm-4
+            .offset-content-right
+              img(src="img/landing-img-01.jpg" alt="").landing-img-2
+
+          .col-xs-12.col-sm-8
+            h2 Оставьте заявку <br> прямо сейчас!
+            p Укажите, пожалуйста, имя и номер телефона. Наш администратор свяжеться с вами что бы уточнить детали
+            
+            form.form.landing-form
+                .row
+                    .col-xs-12.col-sm-4.col-lg-5
+                        input(type="text" placeholder="Как к Вам обращаться?")
+                    .col-xs-12.col-sm-4.col-lg-5
+                        input(type="text" placeholder="Номер телефона")
+                    .col-xs-12.col-sm-4.col-lg-2
+                        input(type="submit" value="Отправить").btn.btn--purple
+
+    section.content-section.content-section--pink
+        .grid
+            .row
+                .col-xs-12.col-sm-4   
+                    .advantages-item.advantages-item--horizontal
+                        img(src="img/advantages-icon-08.svg" alt="")
+                        span 
+                            p 
+                                strong Опытные специалисты
+                            p Все мастера в нашем салоне имеют сертификаты и опыт работы не менее 5 лет
+
+                .col-xs-12.col-sm-4   
+                    .advantages-item.advantages-item--horizontal
+                        img(src="img/advantages-icon-01.svg" alt="")
+                        span 
+                            p 
+                                strong Широкий спектр услуг
+                            p Все виды маникюра, nail-дизайн, наращивание ногтей, лечение ногтей и др.
+
+                .col-xs-12.col-sm-4   
+                    .advantages-item.advantages-item--horizontal
+                        img(src="img/advantages-icon-09.svg" alt="")
+                        span 
+                            p 
+                                strong Удобное расположение
+                            p Студия маникюра BeBeauty расположена в самом центре Чернигова по адрессу Проспект Победы 139. 3 этаж. Кабинет 307
+                            a(href="#") Фото нашей студии
+
+    //- Portfolio
+    include ../parts/_portfolio
+
+    section.content-section
+        .grid
+            h2.text--center Услуги студии beBeauty
+            .row
+                .col-xs-12.col-sm-4
+                    img(src="img/landing-advantages-img.jpg" alt="").img-offset
+                    table.text-table
+                        tr  
+                            td
+                                strong Маникюр / Педикюр
+                            td
+
+                        tr
+                            td Маникюр женский
+                            td
+                                strong 80 грн
+
+                        tr
+                            td Маникюр мужской
+                            td
+                                strong 100 грн
+
+                        tr
+                            td Педикюр женский
+                            td
+                                strong 200 грн
+
+                        tr
+                            td Педикюр мужской
+                            td
+                                strong 250 грн
+
+                        tr
+                            td Педикюр Ж (пальчики)
+                            td
+                                strong 100 грн
+
+                        tr
+                            td Педикюр М (пальчики)
+                            td
+                                strong 150 грн
+
+                .col-xs-12.col-sm-4
+                    img(src="img/landing-advantages-img.jpg" alt="").img-offset
+                    table.text-table
+                        tr  
+                            td
+                                strong Маникюр / Педикюр
+                            td
+
+                        tr
+                            td Маникюр женский
+                            td
+                                strong 80 грн
+
+                        tr
+                            td Маникюр мужской
+                            td
+                                strong 100 грн
+
+                        tr
+                            td Педикюр женский
+                            td
+                                strong 200 грн
+
+                        tr
+                            td Педикюр мужской
+                            td
+                                strong 250 грн
+
+                        tr
+                            td Педикюр Ж (пальчики)
+                            td
+                                strong 100 грн
+
+                        tr
+                            td Педикюр М (пальчики)
+                            td
+                                strong 150 грн
+
+                .col-xs-12.col-sm-4
+                    img(src="img/landing-advantages-img.jpg" alt="").img-offset
+                    table.text-table
+                        tr  
+                            td
+                                strong Маникюр / Педикюр
+                            td
+
+                        tr
+                            td Маникюр женский
+                            td
+                                strong 80 грн
+
+                        tr
+                            td Маникюр мужской
+                            td
+                                strong 100 грн
+
+                        tr
+                            td Педикюр женский
+                            td
+                                strong 200 грн
+
+                        tr
+                            td Педикюр мужской
+                            td
+                                strong 250 грн
+
+                        tr
+                            td Педикюр Ж (пальчики)
+                            td
+                                strong 100 грн
+
+                        tr
+                            td Педикюр М (пальчики)
+                            td
+                                strong 150 грн
+
+            .row
+                .col-xs-12.col-sm-3.col-sm-offset-9
+                    img(src="img/landing-hero-img.jpg" alt="").landing-img-3
+
+    section.content-section.content-section--pink
+        .grid
+            .row
+                .col-xs-12.col-sm-4
+                    .offset-content-right
+                        img(src="img/landing-img-01.jpg" alt="").landing-img-2
+
+                .col-xs-12.col-sm-8
+                    h2 Оставьте заявку <br> прямо сейчас!
+                    p Укажите, пожалуйста, имя и номер телефона. Наш администратор свяжеться с вами что бы уточнить детали
+            
+                    form.form.landing-form
+                        .row
+                            .col-xs-12.col-sm-4.col-lg-5
+                                input(type="text" placeholder="Как к Вам обращаться?")
+                            .col-xs-12.col-sm-4.col-lg-5
+                                input(type="text" placeholder="Номер телефона")
+                            .col-xs-12.col-sm-4.col-lg-2
+                                input(type="submit" value="Отправить").btn.btn--purple
+
+    section.content-section
+        .grid
+            .row.middle-sm
+                .col-xs-12.col-sm-4
+                    h2 Расписание курсов
+                .col-xs-12.col-sm-4
+                    img(src="img/landing-img-02.jpg" alt="").img-offset
+                .col-xs-12.col-sm-4
+                    img(src="img/landing-img-03.jpg" alt="").img-offset
+
+    //- Map
+    include ../parts/_map
+
+    //- Footer text
+    include ../parts/_footer-text

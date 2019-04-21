@@ -35,8 +35,13 @@
         padding-top: 15px;
     }
 
+    p {
+        margin-bottom: 10px;
+    }
+
     &--horizontal {
         display: flex;
+        align-items: flex-start;
         margin-bottom: 35px;
         text-align: left;
 

@@ -29,6 +29,10 @@ img {
     max-width: 100%;    
 }
 
+a {
+    color: $color-dark;
+}
+
 .grid {
     max-width: 1170px;
     width: 100%;
@@ -91,6 +95,6 @@ img {
 .offset-content-right {
 
     @include mq(tablet-wide, min) {
-        margin-right: -200px;
+        margin-right: -220px;
     }
 }
