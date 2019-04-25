@@ -37,6 +37,10 @@
     border-bottom: 1px solid #F5F5F5;
     color: #999;
 
+    @include mq(desktop, min) {
+        display: block;
+    }
+
     &__box {
 
         @include mq(tablet-wide, min) {
@@ -62,7 +66,7 @@
         }
 
         @include mq(tablet-wide, min) {
-            width: 100%;
+            width: auto;
             font-size: 14px;
         }
 

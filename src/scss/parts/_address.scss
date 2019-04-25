@@ -1,0 +1,18 @@
+// Address
+
+.address-item {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+
+    [class^=icon-] {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}
+
+.address-link {
+    display: inline-block;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,52 @@
+
+extends  ../_skeleton
+
+block title
+  title="Контакты"
+
+block page
+
+    //- Hero
+    section.content-section.content-section--pt-0.hero
+        .grid
+            .row
+                .col-xs-12.col-md-10
+                    ul.breadcrumbs
+                        li.breadcrumbs__item
+                            a(href="#").breadcrumbs__link Главная
+                        li.breadcrumbs__item Контакты
+                    .hero__content
+                        h1 Как нас найти
+
+    section.content-section.content-section--pt-0
+        .grid
+            .row
+                .col-xs-12.col-sm-6
+                    .address-item
+                        span.icon-address
+                        | г. Чернигов, проспект Победы, 139; 3 этаж, офис 307
+
+                    .address-item
+                        span.icon-time
+                        | Без выходных с 9:00 до 21:00
+
+                .col-xs-12.col-sm-6
+                    .row    
+                        .col-xs-12.col-md-4
+                            a(href="tel:+380688102229").call__link.address-link
+                                span.call__icon.icon-kievstar
+                                | 068 810 22 29
+                        .col-xs-12.col-md-4
+                            a(href="tel:+380730562229").call__link.address-link
+                                span.call__icon.icon-life
+                                | 073 056 22 29
+                        .col-xs-12.col-md-4
+                            a(href="tel:+380990342229").call__link.address-link
+                                span.call__icon.icon-vodofone
+                                | 099 034 22 29
+
+    //- Maps
+    include ../parts/_map
+
+    //- Footer text
+    include ../parts/_footer-text
