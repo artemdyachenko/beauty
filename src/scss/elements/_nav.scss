@@ -30,6 +30,16 @@
                 margin-right: 30px;
             }
         }
+
+        &--has-submenu {
+
+            &:hover {
+                .nav__submenu {
+                    display: block;
+                }
+            }
+        }
+    
     }
 
     &__link {
@@ -40,6 +50,27 @@
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    &__submenu {
+        font-size: 14px;
+        padding: 10px;
+        background-color: #fff;
+
+        @include mq(desktop, min) {
+            display: none;
+            position: absolute;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            margin: 0 -10px 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

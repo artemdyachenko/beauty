@@ -120,6 +120,8 @@
 
 .header-mobile {
     display: none;
+    overflow: auto;
+    padding-bottom: 40px;
     position: fixed;
     left: 0;
     top: 78px;
